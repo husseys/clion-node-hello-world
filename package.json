@@ -1,0 +1,32 @@
+{
+  "name": "clion-node-hello-world",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A simple Node JS with Express created from Clion and deployed in Heroku",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husseys/clion-node-hello-world.git"
+  },
+  "keywords": [
+    "nodejs",
+    "heroku"
+  ],
+  "author": "Sean Hussey",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2"
+  }
+}
