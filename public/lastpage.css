@@ -1,6 +1,6 @@
 body {
     padding: 50px;
-    position: center;
+    position: relative;
     align-content: center;
     display: block;
     margin-left: auto;
@@ -18,12 +18,10 @@ th{
     border-bottom: solid black;
     width: 10%;
 }
-/*h2{*/
-/*    display: block;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    width: 50%;*/
-/*}*/
+h2{
+   vertical-align: center;
+    horiz-align: center;
+}
 
 #Blackline{
     color:white;
@@ -43,8 +41,12 @@ th{
     outline: solid black;
 }
 .center {
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    display: block;
+    vertical-align: center;
+    horizontal-align: center;
+}
+h2 {
+    float: left;
 }
