@@ -1,0 +1,43 @@
+body {
+    padding: 50px;
+    position: center;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+table{
+    border: solid black;
+}
+tr{
+    border: solid black;
+}
+th{
+    border-right: solid black;
+    border-bottom: solid black;
+    width: 10%;
+}
+#Blackline{
+    color:white;
+    background-color: black;
+}
+
+#Lastline{
+    background-color: darkgreen;
+}
+
+ div { background-color: white}
+#content {
+    padding:5px;
+    border: 25px solid darkseagreen;
+    margin: 5px;
+    width: 825px;
+    outline: solid black;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
