@@ -44,14 +44,7 @@ h2{
     width: 0.5%;
     vertical-align: text-top;
     text-align: left;
-
 }
-/*#skinny{*/
-/*    width: 5%;*/
-/*}*/
-/*#thick{*/
-/*    width: 50%;*/
-/*}*/
 
  div { background-color: white}
 #content {
@@ -62,12 +55,32 @@ h2{
     outline: solid black;
 }
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    vertical-align: center;
-    horizontal-align: center;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    display: flex;
+    /*vertical-align: center;*/
+    /*horizontal-align: center;*/
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    align-items: center;
+}
+.title{
+    text-align: center;
+    /*margin-left: auto;*/
+    width: 25%;
+    font-size: 20px;
+
+}
+.picture{
+    align-content: center;
+    /*float: left;*/
+    justify-content: center;
+    width: 50%;
 }
 h2 {
     float: left;
+}
+img {
+    width: 500px;
+    length: 200px;
 }
