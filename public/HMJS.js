@@ -99,7 +99,7 @@ if (desiredCategory !== "Choose a Category:"){
     for (i = 0; i < word.length; i++) {
         letter = '<li class="letter letter' + word.charAt(i).toUpperCase() + '">' + word.charAt(i).toUpperCase() + '</li>';
         letters.insertAdjacentHTML('beforeend', letter);
-        //letters.innerHTML = letter;
+
     }
 };
 
@@ -115,6 +115,7 @@ function guessLetter(){
             letterToDisplay.style.color = "black";
         }
     }
+
 };
 
 
@@ -123,13 +124,21 @@ function guessLetter(){
 function wordGuess() {
     console.log("Guess Word Pressed");
     var guessedWord = document.getElementById("word").value;
+    var winner = document.getElementById("output");
     console.log(guessedWord);
-    if(guessedWord == word)
+    if(guessedWord === word)
     {
         for(var i = 0; i < word.length; i++) {
             var lettertoDisplay = document.getElementsByClassName("letter letter" + word.charAt(i).toUpperCase()).item(0);
             lettertoDisplay.style.color = "black";
         }
+        winner.innerHTML = "You Have Won"
+        winner.style.visibility = "visible"
+    }
+    else
+    {
+        winner.innerHTML = "You have lost"
+        winner.style.visibility = "visible"
     }
 }
 
