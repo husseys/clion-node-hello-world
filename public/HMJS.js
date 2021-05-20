@@ -1,3 +1,5 @@
+//sadly I ran out of time on this project:(
+
 
 const choices = {
     "categories": [
