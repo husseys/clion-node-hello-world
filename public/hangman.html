@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href= "HM.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+<center><h1 id="h1">Welcome to the Great Game of Hangman</h1></center>
+<br>
+<div class="center">
+    <div class="jumbotron text-center">
+        <form>
+            <div id="maxNumForms" >
+                Set Maximum Number of Letters:
+                <input type="number" id="maxnum" name="numofchars" placeholder="3" min="3" max="12">
+            </div>
+
+            <br>
+
+            <div id="categoryForms">
+                <label for="category">Choose a Category:</label>
+                <select id="category" name="category">
+                    <option value=1>Sports</option>
+                    <option value=2>Animals</option>
+                    <option value=3>Holidays</option>
+                </select>
+            </div>
+        </form>
+        <br>
+        <button type="button" id="startGameButton" onclick="buttonOnClick()">Start Game!</button>
+        <br><br><br><br><br>
+
+        <form id="hangman" style="visibility: hidden">
+            <p id="letters"></p>
+
+            <br><br><br><br>
+
+            <input type="text" maxlength="12" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+            <input id="guess" name="Guess Letter" type="button" value="Guess Letter" onclick="guessLetter()" />
+            <br>
+            <input type="text" maxlength="12" minlength="3" name="word" id="word" placeholder="Guess a word" />
+            <input id="guessWord" name="Guess Word" type="button" value="Guess Word" onclick="wordGuess()" />
+            <br><br><br>
+            <label for="file">Answer Progress:</label>
+
+            <progress id="file" max="100" value="0"> 0% </progress>
+            <br><br><br>
+            <button id="restart" name="restart" type="button">Restart Game</button>
+
+        </form>
+       <p id="output" class="output"></p>
+
+    </div>
+</div>
+<script type="text/javascript" src="HMJS.js"></script>
+</body>
+
+</html>
+
+

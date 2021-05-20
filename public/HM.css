@@ -1,0 +1,41 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: antiquewhite;
+    border-style: dashed;
+    border-color: firebrick;
+
+}
+
+.letter
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    border-bottom: 1px solid black;
+    width: 20px;
+    color: #e9ecef;
+}
+
+.jumbotron
+{
+    margin: 20px auto 20px auto;
+    max-width: 50%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.forms{
+    text-align: left;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+
+
