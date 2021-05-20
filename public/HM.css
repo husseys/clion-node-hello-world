@@ -2,9 +2,10 @@ body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-color: antiquewhite;
-    border-style: dashed;
-    border-color: firebrick;
-
+    border: 5px solid transparent;
+    border-image: linear-gradient(#b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    border-image-width: 12px;
 }
 
 .letter
@@ -36,6 +37,3 @@ label {
     padding-right: 10px;
     font-size: 1rem;
 }
-
-
-
